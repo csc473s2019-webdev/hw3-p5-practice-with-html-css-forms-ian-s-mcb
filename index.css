@@ -5,12 +5,13 @@ div#container {
   width: 550px;
   margin: 0 auto;
 }
-label {
+label.label-left {
   text-align: right;
+  vertical-align: top;
   width: 30%;
   display: inline-block;
 }
-input {
+.button-group {
   display: inline-block;
-  text-align: left;
+  width: 69%;
 }

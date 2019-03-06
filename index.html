@@ -11,34 +11,43 @@
     <p id="description">A make believe form that actually serves no purpose besides demostrating form widgets.</p>
     <form action="#" id="survey-form">
       <div class="field-row">
-        <label id="name-label" for="name">Name:</label>
+        <label id="name-label" class="label-left" for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Enter your name">
       </div>
       <div class="field-row">
-        <label id="email-label" for="email">Email:</label>
+        <label id="email-label" class="label-left" for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="Enter your email">
       </div>
       <div class="field-row">
-        <label id="number-label" for="number">Age:</label>
+        <label id="number-label" class="label-left" for="number">Age:</label>
         <input type="number" name="number" id="number" placeholder="Enter your age">
       </div>
-      <select name="dropdown" id="dropdown">
-        <option value="option-1">Option 1</option>
-        <option value="option-2">Option 2</option>
-        <option value="option-3">Option 3</option>
-        <option value="option-4">Option 4</option>
-      </select>
-      <div class="button-group">
-        <label><input type="radio" name="radio" value="radio-1">Radio 1</label>
-        <label><input type="radio" name="radio" value="radio-2">Radio 2</label>
-        <label><input type="radio" name="radio" value="radio-3">Radio 3</label>
-        <label><input type="radio" name="radio" value="radio-4">Radio 4</label>
+      <div class="field-row">
+        <label id="dropdown" class="label-left" for="dropdown">Gender:</label>
+        <select name="dropdown" id="dropdown">
+          <option value="option-1">Option 1</option>
+          <option value="option-2">Option 2</option>
+          <option value="option-3">Option 3</option>
+          <option value="option-4">Option 4</option>
+        </select>
       </div>
-      <div class="button-group">
-        <label><input type="checkbox" name="checkbox[]" value="checkbox-1">Checkbox 1</label>
-        <label><input type="checkbox" name="checkbox[]" value="checkbox-2">Checkbox 2</label>
-        <label><input type="checkbox" name="checkbox[]" value="checkbox-3">Checkbox 3</label>
-        <label><input type="checkbox" name="checkbox[]" value="checkbox-4">Checkbox 4</label>
+      <div class="field-row">
+        <label class="label-left">Radio buttons:</label>
+        <div class="button-group">
+          <label class="label-right" for="radio-1">Radio 1</label><input id="radio-1" type="radio" name="radio" value="radio-1">
+          <label class="label-right" for="radio-2">Radio 2</label><input id="radio-2" type="radio" name="radio" value="radio-2">
+          <label class="label-right" for="radio-3">Radio 3</label><input id="radio-3" type="radio" name="radio" value="radio-3">
+          <label class="label-right" for="radio-4">Radio 4</label><input id="radio-4" type="radio" name="radio" value="radio-4">
+        </div>
+      </div>
+      <div class="field-row">
+        <label class="label-left">Checkboxes:</label>
+        <div class="button-group">
+          <label class="label-right" for="checkbox-1">Checkbox 1</label><input id="checkbox-1"type="checkbox" name="checkbox[]" value="checkbox-1">
+          <label class="label-right" for="checkbox-2">Checkbox 2</label><input id="checkbox-2"type="checkbox" name="checkbox[]" value="checkbox-2">
+          <label class="label-right" for="checkbox-3">Checkbox 3</label><input id="checkbox-3"type="checkbox" name="checkbox[]" value="checkbox-3">
+          <label class="label-right" for="checkbox-4">Checkbox 4</label><input id="checkbox-4"type="checkbox" name="checkbox[]" value="checkbox-4">
+        </div>
       </div>
       <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter any additional comments"></textarea>
       <button type="submit">Submit</button>
