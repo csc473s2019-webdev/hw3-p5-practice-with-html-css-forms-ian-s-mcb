@@ -10,11 +10,17 @@ label.label-left {
   vertical-align: top;
   width: 30%;
   display: inline-block;
+  margin: 5px 5px 5px 0;
+}
+.input-right {
+  margin: 5px 0 5px;
 }
 .button-group {
   display: inline-block;
-  width: 69%;
+  width: 65%;
   list-style: none;
-  margin: 0;
   padding: 0;
+}
+input#number {
+  padding: 6px 0;
 }
